@@ -46,4 +46,4 @@ jobs:
           pm2 start dist/main.js
           echo "--------Gửi thông báo!"
           curl -X POST -H "Content-Type: application/json" -H "Authorization:${{ secrets.DISCORD_TOKEN }}" -d '{"content":"Server của tôi đã deploy thành công link: https://api.dinhkhang.io.vn/ "}' ${{ secrets.DISCORD_URL }}
-   
+      
